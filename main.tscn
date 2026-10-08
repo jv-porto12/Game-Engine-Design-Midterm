@@ -162,9 +162,3 @@ script = ExtResource("1_ig7tw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2(262, 609.5)
 shape = SubResource("RectangleShape2D_h2yge")
-
-[node name="ColorRect" type="ColorRect" parent="player"]
-offset_left = 246.0
-offset_top = 594.0
-offset_right = 278.0
-offset_bottom = 625.0
