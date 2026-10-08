@@ -1,0 +1,170 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1ilkdadmwjcr"]
+
+[ext_resource type="Script" uid="uid://c68e5b38eibrd" path="res://player.gd" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+size = Vector2(136, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+size = Vector2(153, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(23.5, 629)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(32, 31)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 649.0
+color = Color(0, 0, 0, 1)
+
+[node name="Level Environment" type="Node2D" parent="."]
+
+[node name="Floor" type="StaticBody2D" parent="Level Environment"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor"]
+position = Vector2(202.5, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor"]
+offset_top = 629.0
+offset_right = 405.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor6" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(0, -220)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor6"]
+position = Vector2(185, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor6"]
+offset_top = 629.0
+offset_right = 253.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor7" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(900, -220)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor7"]
+position = Vector2(185, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor7"]
+offset_top = 629.0
+offset_right = 253.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor4" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(0, -100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor4"]
+position = Vector2(266.5, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor4"]
+offset_left = 181.0
+offset_top = 629.0
+offset_right = 352.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor5" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(650, -100)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor5"]
+position = Vector2(266.5, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor5"]
+offset_left = 181.0
+offset_top = 629.0
+offset_right = 352.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor2" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(750, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor2"]
+position = Vector2(202.5, 639)
+shape = SubResource("RectangleShape2D_7dm0k")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor2"]
+offset_top = 629.0
+offset_right = 405.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor3" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(750, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor3"]
+position = Vector2(-177.5, 639)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor3"]
+offset_left = -254.0
+offset_top = 629.0
+offset_right = -100.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Floor8" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(750, -165)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Floor8"]
+position = Vector2(-177.5, 639)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Floor8"]
+offset_left = -254.0
+offset_top = 629.0
+offset_right = -100.0
+offset_bottom = 649.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Wall" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(750, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Wall"]
+position = Vector2(-738, 314.5)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Wall"]
+offset_left = -750.0
+offset_right = -726.0
+offset_bottom = 629.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="Wall2" type="StaticBody2D" parent="Level Environment"]
+position = Vector2(2400, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level Environment/Wall2"]
+position = Vector2(-1259, 315)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="ColorRect" type="ColorRect" parent="Level Environment/Wall2"]
+offset_left = -1271.0
+offset_right = -1247.0
+offset_bottom = 629.0
+color = Color(0, 0.5882353, 1, 1)
+
+[node name="player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_ig7tw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(262, 609.5)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="ColorRect" type="ColorRect" parent="player"]
+offset_left = 246.0
+offset_top = 594.0
+offset_right = 278.0
+offset_bottom = 625.0
